@@ -1,0 +1,102 @@
+*{
+  font-family: "Open sans",sans-serif;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin: 0;
+  border-radius: 3vmin;
+  padding: 2vmin;
+  background-color: darkslategray;
+}
+h1{
+  color: white;
+  text-align: center;
+  font-size: 6vmin;
+  font-weight: bold;
+  font-family: "Open sans",sans-serif;   
+  cursor: pointer; 
+}
+  h1 span{
+    transition: .5s linear;
+    margin-left: 10px;
+    font-weight: normal;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+}
+#rod1_container,#rod2_container,#rod3_container{
+  flex-wrap: wrap;
+  /* margin: 2vmin; */
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  color: white;
+  text-shadow: 0 0 10px black,
+                 0 0 20px black, 
+                 0 0 40px black;
+}
+#rod1,#rod2,#rod3{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: 60vmin;
+  width: 3vmin;
+  background-color: cyan;
+  margin-top: 2vmin;
+  margin-left: 20vmin;
+  margin-right: 20vmin;
+  border-bottom: none;
+  border-radius: 0.7vmin;
+}
+.disks{
+  width: 30vmin;
+  height: 2vmin;
+  background-color: green;
+  border-radius: 2vmin;
+  transition: 0.25s ease-in-out;
+}
+#submit{
+  background-color: black;
+    font-size: 2vmin;
+    box-sizing: border-box;
+    padding: 1vmin;
+    color: white;
+    cursor: pointer;
+    border: none;
+    margin-top: 2vmin;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+}
+#submit:hover{
+  transform: scale(1.5);
+    text-shadow: 0 0 10px cyan,
+               0 0 20px cyan, 
+               0 0 40px cyan;
+}
+#disks_input{
+  background-color: darkslategray;
+  border-radius: 0.7vmin;
+  color: white;
+  margin-top: 2vmin;
+}
+#disks_input::placeholder{
+  text-align: center;
+  color: white;
+
+}
+.container_2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+#message{
+  transition: 0.5s ease-in-out;
+  color: white;
+}
